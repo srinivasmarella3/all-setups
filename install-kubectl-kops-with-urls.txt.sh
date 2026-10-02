@@ -80,3 +80,7 @@ EOF
 chmod +x /root/install-kubectl-kops.sh
 
 bash -x /root/install-kubectl-kops.sh
+
+sudo apt update
+sudo apt install -y unzip curl
+curl -fsSL 'https://awscli.amazonaws.com/v2/install.sh' | sudo bash -s -- --system
